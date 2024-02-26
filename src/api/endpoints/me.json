@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": 1,
+    "name": "DaniTopoo",
+    "avatar": "https://as1.ftcdn.net/v2/jpg/00/28/08/40/1000_F_28084010_bGRJetPfBwNcO3YuRC2C3Pz7qASocWQ4.jpg",
+    "email": "danitopoo@mail.com",
+    "email_verified_at": 1700042400,
+    "created_at": 1700042400,
+    "updated_at": 1700042400,
+    "roles": ["user"],
+    "session": "ca953ad1"
+  }
+}
