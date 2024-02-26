@@ -1,0 +1,47 @@
+{
+  "data": {
+    "playlists": [
+      {
+        "key": 1,
+        "id": 1,
+        "name": "best of lola indigo",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84b611cccb05c68fe593049766",
+        "type": "Playlist",
+        "authors": ["seven rings"]
+      },
+      {
+        "key": 2,
+        "id": 2,
+        "name": "nickiii",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84807a7cb0872f93041a8c4985",
+        "type": "Playlist",
+        "author": ["seven rings"]
+      },
+      {
+        "key": 3,
+        "id": 3,
+        "name": "lo mejor",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84be8ec1b610c66e2ebe679879",
+        "type": "Playlist",
+        "author": ["seven rings", "DaniTopoo"]
+      },
+      {
+        "key": 4,
+        "id": 4,
+        "name": "emilia mami",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84f2d5125e458505db4b8775f2",
+        "type": "Playlist",
+        "author": ["seven rings"]
+      },
+      {
+        "key": 5,
+        "id": 5,
+        "name": "top argentina",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84f1b6189fdde82e309a238613",
+        "type": "Playlist",
+        "author": ["seven rings"]
+      }
+    ],
+    "albums": []
+  }
+}

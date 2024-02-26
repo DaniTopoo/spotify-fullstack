@@ -1,11 +1,13 @@
 {
   "data": {
+    "greeting": "¡Buenas tardes!",
     "featured": [
       {
         "key": 1,
         "id": 1,
         "name": "best of lola indigo",
         "cover": "https://i.scdn.co/image/ab67706c0000da84b611cccb05c68fe593049766",
+        "hover": "#484040",
         "type": "Playlist"
       },
       {
@@ -13,6 +15,7 @@
         "id": 2,
         "name": "nickiii",
         "cover": "https://i.scdn.co/image/ab67706c0000da84807a7cb0872f93041a8c4985",
+        "hover": "#8D7256",
         "type": "Playlist"
       },
       {
@@ -20,6 +23,7 @@
         "id": 1,
         "name": "CONTIGO",
         "cover": "https://i.scdn.co/image/ab67616d0000b273c5426d9daa879064ccf12fb1",
+        "hover": "#383828",
         "type": "Album"
       }
     ],
