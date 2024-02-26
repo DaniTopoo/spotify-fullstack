@@ -124,7 +124,7 @@
         "name": "nickiii",
         "cover": "https://i.scdn.co/image/ab67706c0000da84807a7cb0872f93041a8c4985",
         "type": "Playlist",
-        "author": ["seven rings"]
+        "authors": ["seven rings"]
       },
       {
         "key": 3,
@@ -132,7 +132,7 @@
         "name": "lo mejor",
         "cover": "https://i.scdn.co/image/ab67706c0000da84be8ec1b610c66e2ebe679879",
         "type": "Playlist",
-        "author": ["seven rings", "DaniTopoo"]
+        "authors": ["seven rings", "DaniTopoo"]
       },
       {
         "key": 4,
@@ -140,7 +140,7 @@
         "name": "emilia mami",
         "cover": "https://i.scdn.co/image/ab67706c0000da84f2d5125e458505db4b8775f2",
         "type": "Playlist",
-        "author": ["seven rings"]
+        "authors": ["seven rings"]
       }
     ]
   }
