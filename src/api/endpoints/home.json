@@ -1,0 +1,143 @@
+{
+  "data": {
+    "featured": [
+      {
+        "key": 1,
+        "id": 1,
+        "name": "best of lola indigo",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84b611cccb05c68fe593049766",
+        "type": "Playlist"
+      },
+      {
+        "key": 2,
+        "id": 2,
+        "name": "nickiii",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84807a7cb0872f93041a8c4985",
+        "type": "Playlist"
+      },
+      {
+        "key": 3,
+        "id": 1,
+        "name": "CONTIGO",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273c5426d9daa879064ccf12fb1",
+        "type": "Album"
+      }
+    ],
+    "mixes": [
+      {
+        "key": 1,
+        "is_dedicated": true,
+        "artist": "Maria Becerra",
+        "cover": "https://seed-mix-image.spotifycdn.com/v6/img/artist/1DxLCyH42yaHKGK3cl5bvG/es/default",
+        "featured_artists": [
+          {
+            "id": 1,
+            "name": "Emilia"
+          },
+          {
+            "id": 2,
+            "name": "FMK"
+          },
+          {
+            "id": 3,
+            "name": "Quevedo"
+          }
+        ]
+      },
+      {
+        "key": 2,
+        "is_dedicated": true,
+        "artist": "Emilia",
+        "cover": "https://seed-mix-image.spotifycdn.com/v6/img/artist/0AqlFI0tz2DsEoJlKSIiT9/es/default",
+        "featured_artists": [
+          {
+            "id": 4,
+            "name": "Nicki Nicole"
+          },
+          {
+            "id": 3,
+            "name": "Quevedo"
+          },
+          {
+            "id": 5,
+            "name": "Myke Towers"
+          }
+        ]
+      },
+      {
+        "key": 3,
+        "artist": "latino",
+        "is_dedicated": false,
+        "cover": "https://seed-mix-image.spotifycdn.com/v6/img/latin/50sIhX3HytFEwQXZJLUZQE/es/default",
+        "featured_artists": [
+          {
+            "id": 6,
+            "name": "Alejo"
+          },
+          {
+            "id": 4,
+            "name": "Nicki Nicole"
+          },
+          {
+            "id": 1,
+            "name": "Emilia"
+          }
+        ]
+      },
+      {
+        "key": 3,
+        "artist": "reggaeton",
+        "is_dedicated": false,
+        "cover": "https://seed-mix-image.spotifycdn.com/v6/img/reggaeton/52iwsT98xCoGgiGntTiR7K/es/default",
+        "featured_artists": [
+          {
+            "id": 3,
+            "name": "Quevedo"
+          },
+          {
+            "id": 7,
+            "name": "Mora"
+          },
+          {
+            "id": 9,
+            "name": "Saiko"
+          }
+        ]
+      }
+    ],
+    "recently_played": [
+      {
+        "key": 1,
+        "id": 1,
+        "name": "best of lola indigo",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84b611cccb05c68fe593049766",
+        "type": "Playlist",
+        "authors": ["seven rings"]
+      },
+      {
+        "key": 2,
+        "id": 2,
+        "name": "nickiii",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84807a7cb0872f93041a8c4985",
+        "type": "Playlist",
+        "author": ["seven rings"]
+      },
+      {
+        "key": 3,
+        "id": 3,
+        "name": "lo mejor",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84be8ec1b610c66e2ebe679879",
+        "type": "Playlist",
+        "author": ["seven rings", "DaniTopoo"]
+      },
+      {
+        "key": 4,
+        "id": 4,
+        "name": "emilia mami",
+        "cover": "https://i.scdn.co/image/ab67706c0000da84f2d5125e458505db4b8775f2",
+        "type": "Playlist",
+        "author": ["seven rings"]
+      }
+    ]
+  }
+}
