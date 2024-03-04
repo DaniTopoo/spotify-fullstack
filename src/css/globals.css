@@ -1,0 +1,21 @@
+html,
+body #app {
+  @apply overflow-x-hidden !p-0 text-font bg-body;
+  scrollbar-width: thin;
+}
+
+.module {
+  @apply bg-module rounded-md px-6 py-4;
+}
+
+.selectable {
+  @apply text-font hover:text-heading fill-font hover:fill-heading cursor-pointer default-transition;
+}
+
+.icon-size {
+  @apply h-5;
+}
+
+.default-transition {
+  @apply transition-all duration-300;
+}
