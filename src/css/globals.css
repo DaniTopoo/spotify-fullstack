@@ -20,8 +20,8 @@ body #app {
   @apply transition-all duration-300;
 }
 
-.popper{
-position: relative;
+.popper {
+  position: relative;
 }
 
 .popper::before,
@@ -33,47 +33,53 @@ position: relative;
   transform: translateX(-50%) translateY(-100%) scale(var(--scale));
   transition: 200ms transform;
 }
-.popper::before{
+.popper::before {
   content: attr(data-tooltip);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   color: white;
   width: max-content;
-  padding: .25rem;
+  padding: 0.25rem;
   background: black;
   font-size: 12px;
 }
 
-.popper:hover::before{
+.popper:hover::before {
   --scale: 1;
 }
 
-.scroll-side{
-  max-height: 410px;
-  max-width: 460px;
+.scroll-side {
+  @apply w-full;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
-.scroll-side::-webkit-scrollbar{
+.scroll-side::-webkit-scrollbar {
   width: 10px;
   height: 10%;
 }
-.scroll-side::-webkit-scrollbar-thumb{
-  background: #464545; 
- }
- .scroll-main{
-  max-height: 700px;
-  max-width: 1700px;
+.scroll-side::-webkit-scrollbar-thumb {
+  background: #464545;
+}
+.scroll-main {
+  @apply w-full h-full;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
-.scroll-main::-webkit-scrollbar{
+.scroll-main::-webkit-scrollbar {
   width: 10px;
   height: 10%;
 }
-.scroll-main::-webkit-scrollbar-thumb{
-  background: #464545; 
- }
- .icon-hidden{
-  @apply opacity-0
- }
- .icon-visible:hover .icon-hidden{
-  @apply opacity-100 fill-black p-2 rounded-full bg-green-500
- }
+.scroll-main::-webkit-scrollbar-thumb {
+  background: #464545;
+}
+.icon-hidden {
+  @apply opacity-0 transition-all duration-300;
+  transform: translateY(30%);
+}
+.icon-visible:hover .icon-hidden {
+  @apply opacity-100;
+  transform: translateY(0%);
+}
+
+.playlist-card-name {
+  @apply text-heading text-[13px] font-medium;
+}

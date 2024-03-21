@@ -1,15 +1,18 @@
 <template>
   <div class="flex flex-col h-screen w-screen overflow-hidden fixed bg-body">
-  <div class=" flex gap-3 p-3">
-    <Sidebar class="w-[420px] h-[750px]" />
-    <main class="flex-1  flex-col module">
-      <Header/>
-      <div class=" h-full py-2 ">
-        <RouterView></RouterView>
+    <div class="flex-col flex gap-3 p-3 h-full w-full">
+      <div class="flex gap-3 h-[92%] w-full">
+        <Sidebar />
+        <main class="flex-1 flex-col module overflow-hidden">
+          <Header />
+          <div class="h-full py-2 w-full overflow-hidden">
+            <RouterView></RouterView>
+          </div>
+        </main>
+      </div>
+      <div class="flex-1 w-full border"></div>
     </div>
-    </main>
   </div>
-</div>
 </template>
 
 <script setup>
