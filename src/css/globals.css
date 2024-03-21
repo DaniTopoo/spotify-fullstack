@@ -19,3 +19,61 @@ body #app {
 .default-transition {
   @apply transition-all duration-300;
 }
+
+.popper{
+position: relative;
+}
+
+.popper::before,
+.popper::after {
+  --scale: 0;
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+  transition: 200ms transform;
+}
+.popper::before{
+  content: attr(data-tooltip);
+  border-radius: .3rem;
+  color: white;
+  width: max-content;
+  padding: .25rem;
+  background: black;
+  font-size: 12px;
+}
+
+.popper:hover::before{
+  --scale: 1;
+}
+
+.scroll-side{
+  max-height: 410px;
+  max-width: 460px;
+  overflow-y: scroll;
+}
+.scroll-side::-webkit-scrollbar{
+  width: 10px;
+  height: 10%;
+}
+.scroll-side::-webkit-scrollbar-thumb{
+  background: #464545; 
+ }
+ .scroll-main{
+  max-height: 700px;
+  max-width: 1700px;
+  overflow-y: scroll;
+}
+.scroll-main::-webkit-scrollbar{
+  width: 10px;
+  height: 10%;
+}
+.scroll-main::-webkit-scrollbar-thumb{
+  background: #464545; 
+ }
+ .icon-hidden{
+  @apply opacity-0
+ }
+ .icon-visible:hover .icon-hidden{
+  @apply opacity-100 fill-black p-2 rounded-full bg-green-500
+ }

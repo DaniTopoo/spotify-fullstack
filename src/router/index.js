@@ -6,18 +6,29 @@ const router = createRouter({
     {
       path:'/',
       name: 'Root',
-      redirect:{ name: 'Home' },
+      redirect:{ name: 'home' },
     },
     {
-      path: '/Home',
-      name: 'Home',
+      path: '/home',
+      name: 'home',
       component: () => import('../views/HomeView.vue')
     }, 
     {
-        path: '/Search',
-        name: 'Search',
+        path: '/search',
+        name: 'search',
         component: ()=> import('../views/SearchView.vue')
     },
+    {
+      path: '/Profile',
+      name: 'Profile',
+      component: ()=> import('../views/ProfileView.vue')
+  },
+  {
+    path: '/playlist/:id',
+    name: 'playlist',
+    component: ()=> import('../views/PlayListView.vue')
+},
+  
 ]
 })
 
