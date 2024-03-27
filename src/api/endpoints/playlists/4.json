@@ -1,0 +1,91 @@
+{
+  "data": {
+    "id": 4,
+    "name": "emilia mami",
+    "cover": "https://i.scdn.co/image/ab67706c0000da84f2d5125e458505db4b8775f2",
+    "authors": [
+      {
+        "id": 1,
+        "name": "seven rings"
+      }
+    ],
+    "total_duration": 836,
+    "songs": [
+      {
+        "title": "EL CONDENAO",
+        "album": {
+          "id": 2,
+          "title": "GRX",
+          "cover": "https://i.scdn.co/image/ab67616d00001e02902cd461588db9e4a4d8249f"
+        },
+        "authors": [
+          {
+            "name": "Lola Indigo"
+          }
+        ],
+        "added_on": 1711527534,
+        "duration": 144
+      },
+      {
+        "title": "CONTIGO",
+        "album": {
+          "id": 1,
+          "title": "COTNIGO",
+          "cover": "https://i.scdn.co/image/ab67616d00001e02c5426d9daa879064ccf12fb1"
+        },
+        "authors": [
+          {
+            "name": "KARLO G"
+          }
+        ],
+        "added_on": 1711527534,
+        "duration": 192
+      },
+      {
+        "title": "California",
+        "album": {
+          "id": 3,
+          "title": "SIXDO",
+          "cover": "https://i.scdn.co/image/ab67616d00001e027cc7b0d6a82846cd8b158f99"
+        },
+        "authors": [
+          {
+            "name": "Feid"
+          }
+        ],
+        "added_on": 1711527534,
+        "duration": 151
+      },
+      {
+        "title": "Mentirás",
+        "album": {
+          "id": 4,
+          "title": "bellodrama",
+          "cover": "https://i.scdn.co/image/ab67616d00001e02494f5f7791b2b788d0ea6981"
+        },
+        "authors": [
+          {
+            "name": "Ana Mena"
+          }
+        ],
+        "added_on": 1711527534,
+        "duration": 216
+      },
+      {
+        "title": "cuatro veinte",
+        "album": {
+          "id": 4,
+          "title": "Tú crees en mí?",
+          "cover": "https://i.scdn.co/image/ab67616d00001e02ec3aedff4bde61b335ed6961"
+        },
+        "authors": [
+          {
+            "name": "Emilia"
+          }
+        ],
+        "added_on": 1711527534,
+        "duration": 133
+      }
+    ]
+  }
+}
