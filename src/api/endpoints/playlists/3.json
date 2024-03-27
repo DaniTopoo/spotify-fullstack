@@ -24,6 +24,7 @@
         },
         "authors": [
           {
+            "id": 2,
             "name": "Lola Indigo"
           }
         ],
@@ -34,12 +35,13 @@
         "title": "CONTIGO",
         "album": {
           "id": 1,
-          "title": "COTNIGO",
+          "title": "CONTIGO",
           "cover": "https://i.scdn.co/image/ab67616d00001e02c5426d9daa879064ccf12fb1"
         },
         "authors": [
           {
-            "name": "KARLO G"
+            "id": 1,
+            "name": "KAROL G"
           }
         ],
         "added_on": 1711527534,
@@ -54,6 +56,7 @@
         },
         "authors": [
           {
+            "id": 3,
             "name": "Feid"
           }
         ],
@@ -69,6 +72,7 @@
         },
         "authors": [
           {
+            "id": 4,
             "name": "Ana Mena"
           }
         ],
@@ -84,6 +88,7 @@
         },
         "authors": [
           {
+            "id": 5,
             "name": "Emilia"
           }
         ],
