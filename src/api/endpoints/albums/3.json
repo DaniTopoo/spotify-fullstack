@@ -1,0 +1,36 @@
+{
+  "data": {
+    "id": 3,
+    "title": "SIXDO",
+    "cover": "https://i.scdn.co/image/ab67616d00001e027cc7b0d6a82846cd8b158f99",
+    "author": {
+      "id": 3,
+      "name": "Feid",
+      "avatar": "https://i.scdn.co/image/ab676161000051749e7c05016af970bb9bf76cc1"
+    },
+    "release_year": 2024,
+    "total_duration": 151,
+    "songs": [
+      {
+        "title": "California",
+        "authors": [
+          {
+            "id": 3,
+            "name": "Feid"
+          }
+        ],
+        "duration": 151
+      },
+      {
+        "title": "Luna",
+        "authors": [
+          {
+            "id": 3,
+            "name": "Feid"
+          }
+        ],
+        "duration": 199
+      }
+    ]
+  }
+}

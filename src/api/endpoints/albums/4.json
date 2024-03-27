@@ -1,0 +1,46 @@
+{
+  "data": {
+    "id": 4,
+    "title": "bellodrama",
+    "cover": "https://i.scdn.co/image/ab67616d00001e02494f5f7791b2b788d0ea6981",
+    "author": {
+      "id": 4,
+      "name": "Ana Mena",
+      "avatar": "https://i.scdn.co/image/ab676161000051743db3f9d87b7b3118e0442fc4"
+    },
+    "release_year": 2024,
+    "total_duration": 216,
+    "songs": [
+      {
+        "title": "Mentirás",
+        "authors": [
+          {
+            "id": 4,
+            "name": "Ana Mena"
+          }
+        ],
+        "duration": 216
+      },
+      {
+        "title": "A Un Paso De La Luna",
+        "authors": [
+          {
+            "id": 4,
+            "name": "Ana Mena"
+          }
+        ],
+        "duration": 253
+      },
+      {
+        "title": "Lentamente",
+        "authors": [
+          {
+            "id": 4,
+            "name": "Ana Mena"
+          }
+        ],
+        "duration": 281
+      }
+    ]
+  }
+}

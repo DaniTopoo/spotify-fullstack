@@ -1,0 +1,50 @@
+{
+  "data": {
+    "id": 2,
+    "title": "GRX",
+    "cover": "https://i.scdn.co/image/ab67616d00001e02902cd461588db9e4a4d8249f",
+    "author": {
+      "id": 2,
+      "name": "Lola Indigo",
+      "avatar": "https://i.scdn.co/image/ab67616100005174e6407d4f7f052aab8a8a5331"
+    },
+    "release_year": 2024,
+    "total_duration": 144,
+    "songs": [
+      {
+        "title": "EL CONDENAO",
+        "authors": [
+          {
+            "id": 2,
+            "name": "Lola Indigo"
+          }
+        ],
+        "duration": 144
+      },
+      {
+        "title": "MALA SUERTE",
+        "authors": [
+          {
+            "id": 2,
+            "name": "Lola Indigo"
+          }
+        ],
+        "duration": 205
+      },
+      {
+        "title": "UNA BACHATA",
+        "authors": [
+          {
+            "id": 2,
+            "name": "Lola Indigo"
+          },
+          {
+            "id": 6,
+            "name": "SAIKO"
+          }
+        ],
+        "duration": 157
+      }
+    ]
+  }
+}
