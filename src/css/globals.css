@@ -28,7 +28,7 @@ body #app {
 .popper::after {
   --scale: 0;
   position: absolute;
-  top: -0.5rem;
+  top: -0.25rem;
   left: 50%;
   transform: translateX(-50%) translateY(-100%) scale(var(--scale));
   transition: 200ms transform;

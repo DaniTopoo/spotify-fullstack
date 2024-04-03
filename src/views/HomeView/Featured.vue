@@ -1,5 +1,6 @@
 <template>
-  <div
+  <RouterLink
+            :to="`/playlist/${id}`"
     class="flex justify-between text-heading cursor-pointer rounded hover:bg-piece hover:rounded bg-box icon-visible"
   >
     <div class="flex items-center">
@@ -13,11 +14,11 @@
     <div class="flex items-center justify-center mr-3">
       <PlayDotIcon />
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <script setup>
 import PlayDotIcon from "/src/components/PlayDotIcon.vue";
-
-defineProps(["name", "cover"]);
+import { RouterLink } from "vue-router";
+defineProps(["name", "cover","id"]);
 </script>

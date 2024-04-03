@@ -10,7 +10,9 @@
           </div>
         </main>
       </div>
-      <div class="flex-1 w-full border"></div>
+      <div class="flex-1 w-full">
+        <FooterPage/>
+      </div>
     </div>
   </div>
 </template>

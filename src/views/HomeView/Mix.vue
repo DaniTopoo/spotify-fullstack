@@ -1,5 +1,6 @@
 <template>
-  <div
+  <RouterLink
+            :to="`/playlist/${mix.id}`"
     class="min-w-40 min-h-56 max-w-40 max-h-56 flex flex-col gap-2 hover:bg-box rounded-lg transiton-all duration-300 p-2 cursor-pointer"
   >
     <div
@@ -17,12 +18,13 @@
         {{ displayArtists }}
       </div>
     </div>
-  </div>
+  </RouterLink>
 </template>
 
 <script setup>
 import PlayDotIcon from "/src/components/PlayDotIcon.vue";
 import { computed } from "vue";
+import { RouterLink } from "vue-router";
 
 const props = defineProps(["mix"]);
 

@@ -49,86 +49,27 @@
         </div>
       </div>
       <div class="scroll-side">
-        <div v-if="playListData" class="flex flex-col">
-          <RouterLink
-            :to="`/playlist/${playlist.id}`"
-            class="flex items-center text-heading cursor-pointer hover:bg-box hover:rounded-md"
-            v-for="playlist in playListData.data.playlists"
-            :key="playlist.key"
+        <div v-if="data" class="flex flex-col">
+          <PlayLists
+          v-for="playlist in data.data.playlists"
+          :key="playlist.key"
+          :name="playlist.name"
+          :type="playlist.type"
+          :cover="playlist.cover"
+          :authors="playlist.authors"
+          :id="playlist.id"
           >
-            <div class="h-10 w-10">
-              <img
-                class="h-full w-full rounded-md"
-                :src="playlist.cover"
-                alt="imagen"
-              />
-            </div>
-            <div class="flex flex-col pl-3">
-              <p class="text-heading">{{ playlist.name }}</p>
-              <div class="flex items-center">
-                <span class="text-font">{{ playlist.type }} ·</span>
-                <span
-                  class="text-font p-1"
-                  v-for="author in playlist.authors"
-                  >{{ author }}</span
-                >
-              </div>
-            </div>
-          </RouterLink>
-        </div>
-        <div v-if="playListData" class="flex flex-col">
-          <RouterLink
-            :to="`/playlist/${playlist.id}`"
-            class="flex items-center text-heading cursor-pointer hover:bg-box hover:rounded-md"
-            v-for="playlist in playListData.data.playlists"
-            :key="playlist.key"
+          </PlayLists>
+          <PlayLists
+          v-for="playlist in data.data.playlists"
+          :key="playlist.key"
+          :name="playlist.name"
+          :type="playlist.type"
+          :cover="playlist.cover"
+          :authors="playlist.authors"
+          :id="playlist.id"
           >
-            <div class="flex items-center h-10 w-10">
-              <img
-                class="h-full w-full rounded-md"
-                :src="playlist.cover"
-                alt="imagen"
-              />
-            </div>
-            <div class="flex flex-col pl-3">
-              <p class="text-heading">{{ playlist.name }}</p>
-              <div class="flex items-center">
-                <span class="text-font">{{ playlist.type }} ·</span>
-                <span
-                  class="text-font p-1"
-                  v-for="author in playlist.authors"
-                  >{{ author }}</span
-                >
-              </div>
-            </div>
-          </RouterLink>
-        </div>
-        <div v-if="playListData" class="flex flex-col">
-          <RouterLink
-            :to="`/playlist/${playlist.id}`"
-            class="flex items-center text-heading cursor-pointer hover:bg-box hover:rounded-md"
-            v-for="playlist in playListData.data.playlists"
-            :key="playlist.key"
-          >
-            <div class="flex items-center h-10 w-10">
-              <img
-                class="h-full w-full rounded-md"
-                :src="playlist.cover"
-                alt="imagen"
-              />
-            </div>
-            <div class="flex flex-col pl-3">
-              <p class="text-heading">{{ playlist.name }}</p>
-              <div class="flex items-center">
-                <span class="text-font">{{ playlist.type }} ·</span>
-                <span
-                  class="text-font p-1"
-                  v-for="author in playlist.authors"
-                  >{{ author }}</span
-                >
-              </div>
-            </div>
-          </RouterLink>
+          </PlayLists>
         </div>
       </div>
     </div>
@@ -139,6 +80,7 @@
 import axios from "axios";
 import { ref } from "vue";
 import { RouterLink } from "vue-router";
+import PlayLists from "./SideBar/PlayLists.vue";
 import HomeIcon from "/src/components/iconics/HomeIcon.vue";
 import SearchIcon from "/src/components/iconics/SearchIcon.vue";
 import LibraryIcon from "/src/components/iconics/LibraryIcon.vue";
@@ -164,8 +106,8 @@ const buttons = [
     name: "Pódcast y programas",
   },
 ];
-const playListData = ref(null);
+const data = ref(null);
 axios.get("/src/api/endpoints/links.json").then((response) => {
-  playListData.value = response.data;
+  data.value = response.data;
 });
 </script>
