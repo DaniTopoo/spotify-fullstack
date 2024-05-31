@@ -1,13 +1,19 @@
 <template>
-<div class="flex flex-col gap-3">   
-<Header class="p-5 bg-gradient-to-b from-emerald-500 via-green-900 to-emerald-900"/>
-<div class="flex p-5 items-center bg-gradient-to-b from-emerald-500 via-green-900 to-emerald-900">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFNVt1V6CfxPxCFWN-KQrVEhMI0RJZ9lF6Q&usqp=CAU"
+<div 
+v-if="profileData"
+class="flex flex-col gap-3">   
+<HeaderMain/>
+<div class="flex mt-28">
+<img :src=profileData.data.avatar
  alt="Perfil" class="h-40 rounded-full">
- <div class="flex flex-col m-7">
+ <div class="flex flex-col m-7 gap-3">
     <span class="text-white">Perfil</span>
-    <span class="text-7xl text-white">DaniTopoo</span>
-    <span class="text-white">10 listas públicas·4 seguidores·Sigue a 35 usuarios</span>
+    <span class="text-7xl text-white">{{profileData.data.name}}</span>
+    <div class="text-white">
+      <span>10 listas públicas · </span>
+      <span class="hover:underline cursor-pointer">4 seguidores · </span>
+      <span class="hover:underline cursor-pointer">Sigue a 35 usuarios </span>
+    </div>
 
  </div>
 </div>
@@ -15,5 +21,14 @@
 </div>
 </template>
 <script setup>
-import Header from "./Header.vue";
+import axios from "axios";
+import HeaderMain from "./Header.vue";
+import { ref } from "vue";
+
+const profileData = ref(null);
+axios
+  .get(`/src/api/endpoints/me.json`)
+  .then((response) => {
+    profileData.value = response.data;
+  });
 </script>

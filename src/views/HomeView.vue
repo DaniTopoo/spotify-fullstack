@@ -1,6 +1,6 @@
 <template>
   <div class="scroll-main">
-    <div class="flex flex-col gap-3">
+    <div class="flex flex-col gap-3 mt-14">
       <div class="w-full gridc gap-2" v-if="data">
         <Featured
           v-for="featured in data.data.featured"
@@ -58,7 +58,6 @@ import { ref } from "vue";
 import Featured from "./HomeView/Featured.vue";
 import Mix from "./HomeView/Mix.vue";
 import Recently from "./HomeView/Recently.vue";
-import { RouterLink } from "vue-router";
 
 const data = ref(null);
 axios.get("/src/api/endpoints/home.json").then((response) => {

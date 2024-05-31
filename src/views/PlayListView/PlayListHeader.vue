@@ -1,9 +1,9 @@
 <template>
   <div v-if="playListData">
-    <div class="flex p-5 items-center h-[250px] w-full text-heading relative">
+    <div class="flex p-5 items-center h-[250px] w-full text-heading relative mt-14">
       <div class="h-[200px] w-[200px]">
-        <img
-          class="h-full w-full rounded"
+        <img id="imagen_cover"
+          class="h-full w-full rounded js-fillcolor"
           :src="playListData.data.cover"
           alt="imagen"
         />
@@ -20,8 +20,8 @@
             class="hover:underline cursor-pointer"
             >{{ author.name }} ·</span
           >
-          <span>7 ME GUSTA ·</span>
-          <span>CANCIONES,</span>
+          <span>7 me gusta ·</span>
+          <span>5 canciones,</span>
           <span
             >{{
               minutesToString(playListData.data.total_duration)
@@ -36,10 +36,12 @@
 
 <script setup>
 import axios from "axios";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 const route = useRoute();
 const playListData = ref(null);
+var imagen_color = document.getElementById("imagen_cover")
+  var imagen = new Image()
 axios
   .get(`/src/api/endpoints/playlists/${route.params.id}.json`)
   .then((response) => {
